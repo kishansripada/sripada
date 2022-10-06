@@ -67,7 +67,7 @@ $: console.log(scrollPosition);
       <h2 class="text-xl text-right">in a landscape laden by masks.</h2>
    </div> -->
 
-   <div class="text-9xl px-[10%] flex flex-col justify-center h-[500px]">
+   <div class=" text-5xl md:text-8xl lg:text-9xl px-[10%] flex flex-col justify-center h-[500px]">
       <h1>It's easy to vilify</h1>
       <h1>transparency.</h1>
       <!-- <img
@@ -77,23 +77,23 @@ $: console.log(scrollPosition);
       <h2 class="text-xl text-right">in a landscape laden by masks.</h2>
    </div>
 
-   <div class="h-[568px] px-[10%] flex flex-row child:mx-3 mt-[250px]  mb-[250px] ">
-      <div class="w-1/3  flex flex-col items-center">
-         <h1 class="text-5xl mb-5">"the $50 shirt"</h1>
+   <div class=" px-[10%] flex flex-col lg:flex-row lg:child:mx-3 mt-[250px]  mb-[250px] justify-center items-center ">
+      <div class="lg:w-1/3  flex flex-col items-center">
+         <h1 class="lg:text-5xl text-4xl mb-5">"the $51 t-shirt"</h1>
 
          <div class="border-black border-2 flex flex-col items-center h-full w-full">
             <img src="/t-shirt.png" alt="" />
          </div>
       </div>
-      <div class="w-1/3  flex flex-col items-center">
-         <h1 class="text-5xl mb-5">"the $75 shirt"</h1>
+      <div class="lg:w-1/3  flex flex-col items-center">
+         <h1 class="lg:text-5xl text-4xl mb-5">"the $76 t-shirt"</h1>
 
          <div class="border-black border-2 flex flex-col items-center h-full w-full">
             <img src="/t-shirt.png" alt="" />
          </div>
       </div>
-      <div class="w-1/3  flex flex-col items-center">
-         <h1 class="text-5xl mb-5">"the $100 shirt"</h1>
+      <div class="lg:w-1/3  flex flex-col items-center">
+         <h1 class="lg:text-5xl text-4xl mb-5">"the $101 t-shirt"</h1>
          <div class="border-black border-2 flex flex-col items-center h-full w-full">
             <img src="/t-shirt.png" alt="" />
          </div>
@@ -102,7 +102,7 @@ $: console.log(scrollPosition);
 </div>
 
 <svg
-   class="fixed bottom-[-40px] right-[-70px] anim2 cursor-pointer hover:scale-110 transition duration-500 pointer-events-none "
+   class="fixed bottom-[-60px] right-[-70px] anim2 cursor-pointer hover:scale-110 transition duration-500 pointer-events-none "
    stroke-miterlimit="10"
    style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;  height: 190px;
 "
