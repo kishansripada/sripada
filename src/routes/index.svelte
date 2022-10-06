@@ -74,7 +74,7 @@ $: console.log(scrollPosition);
          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Claw_Marks.svg/744px-Claw_Marks.svg.png"
          class="w-24 absolute pointer-events-none right-[200px] top-[450px]"
          alt="" /> -->
-      <h2 class="text-xl text-right">in a landscape laden by masks.</h2>
+      <h2 class="text-xl text-right">in a landscape laden with masks.</h2>
    </div>
 
    <div class=" px-[10%] flex flex-col lg:flex-row lg:child:mx-3 mt-[250px]  mb-[250px] justify-center items-center ">
@@ -82,20 +82,20 @@ $: console.log(scrollPosition);
          <h1 class="lg:text-5xl text-4xl mb-5">"the $51 t-shirt"</h1>
 
          <div class="border-black border-2 flex flex-col items-center h-full w-full">
-            <img src="/t-shirt.png" alt="" />
+            <video src="/animated.mp4" autoplay loop></video>
          </div>
       </div>
       <div class="lg:w-1/3  flex flex-col items-center">
          <h1 class="lg:text-5xl text-4xl mb-5">"the $76 t-shirt"</h1>
 
          <div class="border-black border-2 flex flex-col items-center h-full w-full">
-            <img src="/t-shirt.png" alt="" />
+            <video src="/animated.mp4" autoplay loop></video>
          </div>
       </div>
       <div class="lg:w-1/3  flex flex-col items-center">
          <h1 class="lg:text-5xl text-4xl mb-5">"the $101 t-shirt"</h1>
          <div class="border-black border-2 flex flex-col items-center h-full w-full">
-            <img src="/t-shirt.png" alt="" />
+            <video src="/animated.mp4" autoplay loop></video>
          </div>
       </div>
    </div>
