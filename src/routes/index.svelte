@@ -8,11 +8,15 @@ import tshirt from "../../static/t-shirt.png";
 import { browser } from "$app/env";
 let scrollPosition = 0;
 $: console.log(scrollPosition);
+
+// $: if (browser) {
+//    document.getElementById("vid").play();
+// }
 </script>
 
 <svelte:head>
-   <title>kishan sripada ⸺ one-of-one</title>
-   <meta name="description" content="kishan sripada's portfolio" />
+   <title>sripada</title>
+   <!-- <meta name="description" content="kishan sripada's portfolio" />
    <meta name="keywords" content="kishan, sripada, goat, portfolio, design, developer" />
    <meta name="twitter:card" content="summary" />
    <meta name="twitter:title" content="kishan sripada ⸺ one-of-one" />
@@ -20,7 +24,7 @@ $: console.log(scrollPosition);
    <meta property="og:title" content="kishan sripada ⸺ one-of-one" />
    <meta property="og:description" content="kishan sripada's portfolio" />
    <meta property="og:image" content="https://i.imgur.com/o0yK4lX.png" />
-   <meta property="og:site_name" content="kishan sripada ⸺ one-of-one" />
+   <meta property="og:site_name" content="kishan sripada ⸺ one-of-one" /> -->
 </svelte:head>
 <svelte:window bind:scrollY="{scrollPosition}" />
 
@@ -82,20 +86,47 @@ $: console.log(scrollPosition);
          <h1 class="lg:text-5xl text-4xl mb-5">"the $51 t-shirt"</h1>
 
          <div class="border-black border-2 flex flex-col items-center h-full w-full">
-            <video src="/animated.mp4" autoplay loop></video>
+            <video
+               data-module="video"
+               playsinline=""
+               autoplay="autoplay"
+               muted="muted"
+               loop="loop"
+               data-video-bg-executed-loops="1"
+               tabindex="-1"
+               src="/animated.mp4"
+               data-duration="10069"></video>
          </div>
       </div>
       <div class="lg:w-1/3  flex flex-col items-center">
          <h1 class="lg:text-5xl text-4xl mb-5">"the $76 t-shirt"</h1>
 
          <div class="border-black border-2 flex flex-col items-center h-full w-full">
-            <video src="/animated.mp4" autoplay loop></video>
+            <video
+               data-module="video"
+               playsinline=""
+               autoplay="autoplay"
+               muted="muted"
+               loop="loop"
+               data-video-bg-executed-loops="1"
+               tabindex="-1"
+               src="/animated.mp4"
+               data-duration="10069"></video>
          </div>
       </div>
       <div class="lg:w-1/3  flex flex-col items-center">
          <h1 class="lg:text-5xl text-4xl mb-5">"the $101 t-shirt"</h1>
          <div class="border-black border-2 flex flex-col items-center h-full w-full">
-            <video src="/animated.mp4" autoplay loop></video>
+            <video
+               data-module="video"
+               playsinline=""
+               autoplay="autoplay"
+               muted="muted"
+               loop="loop"
+               data-video-bg-executed-loops="1"
+               tabindex="-1"
+               src="/animated.mp4"
+               data-duration="10069"></video>
          </div>
       </div>
    </div>
