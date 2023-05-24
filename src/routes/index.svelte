@@ -1,0 +1,263 @@
+<!-- <script context="module">
+export const prerender = true;
+export const hydrate = false;
+</script> -->
+<script>
+import ColorSplotch from "$lib/ColorSplotch.svelte";
+import tshirt from "../../static/t-shirt.png";
+import { browser } from "$app/env";
+let scrollPosition = 0;
+// $: console.log(scrollPosition);
+
+// $: if (browser) {
+//    document.getElementById("vid").play();
+// }
+
+// $: console.log(scrollPosition);
+</script>
+
+<svelte:head>
+   <title>sripada</title>
+   <!-- <meta name="description" content="kishan sripada's portfolio" />
+      <meta name="keywords" content="kishan, sripada, goat, portfolio, design, developer" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content="kishan sripada ⸺ one-of-one" />
+      <meta name="twitter:image" content="https://i.imgur.com/o0yK4lX.png" />
+      <meta property="og:title" content="kishan sripada ⸺ one-of-one" />
+      <meta property="og:description" content="kishan sripada's portfolio" />
+      <meta property="og:image" content="https://i.imgur.com/o0yK4lX.png" />
+      <meta property="og:site_name" content="kishan sripada ⸺ one-of-one" /> -->
+</svelte:head>
+<svelte:window bind:scrollY="{scrollPosition}" />
+
+<div class="font-alegreya">
+   <nav class="{`sticky top-0 bg-white/70 backdrop-blur-xl z-50  `}">
+      <!-- <div class="marquee">
+         <div class="marquee__inner" aria-hidden="true">
+            <span style="white-space: nowrap;">
+               how imperative is holyfeet as a social phenomenon? how imperative is holyfeet as a social phenomenon? how imperative is holyfeet as a
+               social phenomenon? how imperative is holyfeet as a social phenomenon? how imperative is holyfeet as a social phenomenon?
+            </span>
+            <span style="white-space: nowrap;">
+               how imperative is holyfeet as a social phenomenon? how imperative is holyfeet as a social phenomenon? how imperative is holyfeet as a
+               social phenomenon? how imperative is holyfeet as a social phenomenon? how imperative is holyfeet as a social phenomenon?
+            </span>
+         </div>
+      </div> -->
+      <div class="flex flex-row justify-between p-3">
+         <p>detroit, mi $</p>
+         <p>contact us</p>
+      </div>
+      <div class="flex flex-row justify-center h-[50px] {`${scrollPosition > 3 ? 'border-b-neutral-900 border-b' : ''}`}"></div>
+   </nav>
+
+   <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="xl:h-[75px] z-[60] left-1/2 -translate-x-1/2 h-[50px] top-[200px] fixed logo"
+      fill="#fff"
+      viewBox="0 0 5660 953">
+      <path
+         d="M44.8 687.2c21.4667-4.2 35.9333-10.267 43.4-18.2 7.4667-8.4 11.2-22.4 11.2-42l.7-294c0-14.933-1.8667-24.967-5.6-30.1-3.2667-5.133-10.0333-7.7-20.3-7.7l-23.8 1.4-1.4-2.8 4.9-30.8c6.0667 0 10.7333.233 14 .7 28 .933 49.233 1.4 63.7 1.4 19.6 0 44.567-2.1 74.9-6.3l-2.8 31.5c-14 2.333-24.033 5.133-30.1 8.4-5.6 3.267-9.567 8.867-11.9 16.8-1.867 7.467-3.267 20.067-4.2 37.8l-4.2 113.4 117.6.7c29.4 0 63.933-2.333 103.6-7l.7-127.4c0-14.933-1.867-24.967-5.6-30.1-3.267-5.133-10.033-7.7-20.3-7.7-6.533 0-14.467.467-23.8 1.4l-1.4-2.8L329 263c5.133.467 14.467.933 28 1.4 13.533.467 27.067.7 40.6.7 22.4 0 50.4-2.1 84-6.3l-2.8 31.5c-17.267 2.333-28.933 6.3-35 11.9-6.067 5.133-9.333 14.467-9.8 28-2.8 52.733-5.133 109.433-7 170.1-1.867 60.2-2.8 105.7-2.8 136.5 0 17.267 2.1 28.933 6.3 35 4.2 5.6 12.367 8.4 24.5 8.4 5.6 0 16.1-.7 31.5-2.1l1.4 2.8-6.3 32.2c-6.533 0-11.667-.233-15.4-.7-30.8-.933-54.367-1.4-70.7-1.4l-80.5 1.4 6.3-31.5c15.4-.467 26.6-2.567 33.6-6.3 7.467-3.733 12.6-10.733 15.4-21 2.8-10.267 4.2-26.133 4.2-47.6V500.3l-106.4-.7c-11.667.467-28 1.4-49 2.8-21 .933-43.4 2.567-67.2 4.9l-2.8 125.3c0 19.133 2.1 31.967 6.3 38.5 4.2 6.067 12.367 9.1 24.5 9.1 5.6 0 16.1-.7 31.5-2.1l1.4 2.8-6.3 32.2c-4.2-.467-12.133-.933-23.8-1.4-11.667-.467-23.567-.7-35.7-.7-21.467 0-44.567.933-69.3 2.8-24.2667 1.867-36.6333 3.733-37.1 5.6l4.2-32.2Zm1044.33 32.2c-37.8 0-71.4-9.1-100.796-27.3-29.4-18.2-52.266-43.633-68.6-76.3-16.333-33.133-24.5-70.7-24.5-112.7 0-45.733 10.034-87.267 30.1-124.6 20.534-37.8 48.3-67.433 83.296-88.9 35.47-21.933 74.44-32.9 116.9-32.9 38.74 0 73.04 9.1 102.9 27.3 29.87 18.2 53.2 43.633 70 76.3 16.8 32.667 25.2 70 25.2 112 0 45.733-10.5 87.5-31.5 125.3-20.53 37.8-48.76 67.667-84.7 89.6-35.46 21.467-74.9 32.2-118.3 32.2Zm21.7-35.7c29.4 0 55.54-7.7 78.4-23.1 22.87-15.4 40.6-36.867 53.2-64.4 12.6-27.533 18.9-59.033 18.9-94.5 0-39.667-6.76-74.667-20.3-105-13.53-30.8-32.43-54.833-56.7-72.1-23.8-17.267-51.33-25.9-82.6-25.9-28.46 0-53.9 7.7-76.3 23.1-21.93 15.4-39.196 36.867-51.796 64.4-12.133 27.533-18.2 59.033-18.2 94.5 0 39.667 6.534 74.9 19.6 105.7 13.067 30.333 31.266 54.133 54.596 71.4 23.8 17.267 50.87 25.9 81.2 25.9Zm632.37 2.1c18.2-2.8 30.57-8.167 37.1-16.1 7-8.4 10.5-22.633 10.5-42.7l.7-294c0-14.933-1.86-24.967-5.6-30.1-3.26-5.133-10.03-7.7-20.3-7.7-4.66 0-9.33.233-14 .7-4.66.467-7.93.7-9.8.7l-1.4-2.8 4.9-30.8c5.6.467 16.1.933 31.5 1.4 15.4.467 31.04.7 46.9.7 12.6 0 26.84-.7 42.7-2.1 16.34-1.867 27.07-3.267 32.2-4.2l-2.8 31.5c-15.4 1.867-26.13 4.9-32.2 9.1-5.6 4.2-9.1 9.1-10.5 14.7-.93 5.6-2.1 19.367-3.5 41.3-2.8 39.667-4.9 84.933-6.3 135.8-1.4 50.867-2.1 95.667-2.1 134.4 0 16.8 1.4 28.933 4.2 36.4 2.8 7 7.94 11.667 15.4 14 7.94 2.333 21.24 3.5 39.9 3.5 28.47 0 49.24-2.333 62.3-7 13.54-4.667 23.57-13.767 30.1-27.3 7-13.533 13.3-35.233 18.9-65.1l30.8-3.5 2.1 3.5c-1.4 7.467-4.43 24.267-9.1 50.4-4.2 26.133-7.93 53.667-11.2 82.6l-3.5 4.2c-13.53-.933-41.53-2.333-84-4.2-42-1.4-76.76-2.1-104.3-2.1-21.93 0-42 .933-60.2 2.8-17.73 1.867-28.93 3.267-33.6 4.2l4.2-32.2Zm719.46 1.4c16.8-3.267 28.93-7.467 36.4-12.6 7.47-5.133 12.37-12.133 14.7-21s3.5-22.867 3.5-42v-30.8c0-14.467-1.4-27.067-4.2-37.8-2.8-11.2-8.17-24.967-16.1-41.3l-63-128.1c-12.13-24.733-20.77-41.3-25.9-49.7-5.13-8.867-12.37-15.867-21.7-21-9.33-5.133-22.87-8.4-40.6-9.8l-1.4-2.8 4.2-27.3c5.13.467 14.93.933 29.4 1.4 14.47.467 30.33.7 47.6.7 16.33 0 35.23-.7 56.7-2.1 21.93-1.867 36.17-3.033 42.7-3.5l2.1 4.9-2.1 24.5c-21 1.867-35.23 4.667-42.7 8.4-7 3.267-10.5 8.867-10.5 16.8 0 6.067 5.83 22.633 17.5 49.7 11.67 27.067 23.57 53.667 35.7 79.8 12.6 26.133 21 43.167 25.2 51.1h3.5l79.8-148.4c7.47-13.533 11.2-25.2 11.2-35 0-12.133-14.7-19.133-44.1-21l-1.4-2.8 4.2-27.3c5.6.467 17.27 1.4 35 2.8s31.97 2.1 42.7 2.1c11.2 0 23.57-.233 37.1-.7 14-.933 23.1-1.633 27.3-2.1l2.8 4.9-4.2 25.9c-14.93 2.8-26.6 6.767-35 11.9-8.4 4.667-15.87 11.667-22.4 21-6.07 8.867-15.17 24.033-27.3 45.5-2.8 5.6-5.13 9.8-7 12.6l-70 123.2c-6.07 10.733-10.03 22.867-11.9 36.4-1.4 13.533-2.57 38.033-3.5 73.5v15.4c-.47 18.2 1.4 30.8 5.6 37.8 4.67 6.533 13.07 9.8 25.2 9.8 7.47 0 14.47-.233 21-.7 6.53-.467 10.97-.933 13.3-1.4l1.4 2.8-6.3 32.2c-6.53-.467-18.67-.933-36.4-1.4-17.27-.467-34.77-.7-52.5-.7-14.47 0-30.1 1.167-46.9 3.5-16.8 2.333-27.77 3.967-32.9 4.9l4.2-32.2Zm655.96 0c21.47-4.2 35.93-10.267 43.4-18.2 7.47-8.4 11.2-22.4 11.2-42l.7-294c0-14.933-1.87-24.967-5.6-30.1-3.27-5.133-10.03-7.7-20.3-7.7-4.67 0-9.33.233-14 .7-4.67.467-7.93.7-9.8.7l-1.4-2.8 4.9-30.8c6.07.467 18.2.933 36.4 1.4 18.67.467 38.97.7 60.9.7 91.93 0 157.5-2.8 196.7-8.4l2.1 4.2c-.47 2.8-1.87 9.333-4.2 19.6-1.87 10.267-3.97 24.5-6.3 42.7-2.33 18.2-4.2 36.867-5.6 56l-33.6 2.8c0-2.333.23-6.767.7-13.3s.7-12.833.7-18.9c0-16.333-2.1-27.533-6.3-33.6-3.73-6.533-11.67-10.733-23.8-12.6-12.13-2.333-33.37-3.5-63.7-3.5-16.33 0-27.53.467-33.6 1.4-6.07.933-10.03 3.267-11.9 7-1.87 3.267-3.03 9.567-3.5 18.9l-5.6 147.7 72.1.7c8.87 0 21.93-.933 39.2-2.8 17.27-2.333 28.7-3.967 34.3-4.9l2.8 3.5-9.8 42c-6.07-.467-17.5-.933-34.3-1.4-16.33-.467-33.6-.7-51.8-.7-17.27 0-35.23 1.633-53.9 4.9l-2.8 116.2c0 19.133 2.1 31.967 6.3 38.5 4.2 6.067 12.37 9.1 24.5 9.1 9.33 0 18.9-.233 28.7-.7 10.27-.933 17.27-1.4 21-1.4l1.4 2.8-6.3 32.9c-7.47-.467-21.47-1.167-42-2.1-20.07-.467-40.83-.7-62.3-.7-14.47 0-30.1 1.167-46.9 3.5-16.8 2.333-27.77 3.967-32.9 4.9l4.2-32.2Zm1025.3-93.1c-7.93 37.8-14.23 77-18.9 117.6l-3.5 4.2c-98-3.267-168.7-4.9-212.1-4.9-34.53 0-66.96 2.333-97.3 7l4.2-32.2c21-2.8 35.24-8.167 42.7-16.1 7.94-8.4 11.9-22.633 11.9-42.7l.7-294c0-14.933-1.86-24.967-5.6-30.1-3.26-5.133-10.03-7.7-20.3-7.7l-23.8 1.4-1.4-2.8 4.9-30.8c47.6 1.4 80.04 2.1 97.3 2.1 55.54 0 98.7-.467 129.5-1.4 30.8-1.4 57.64-3.733 80.5-7l2.1 4.2c-8.4 36.867-13.76 75.6-16.1 116.2l-33.6 2.8 1.4-30.1c0-16.333-2.1-27.533-6.3-33.6-4.2-6.533-13.3-10.733-27.3-12.6-14-2.333-38.5-3.5-73.5-3.5-16.33 0-27.53.467-33.6 1.4-6.06.933-10.03 3.267-11.9 7-1.86 3.267-3.03 9.567-3.5 18.9l-5.6 135.8 72.1.7c18.2 0 46.67-2.567 85.4-7.7l2.8 3.5-9.8 41.3c-51.8-1.4-84.46-2.1-98-2.1-15.4 0-33.36 1.633-53.9 4.9l-2.8 133.7c0 13.533 1.17 23.1 3.5 28.7 2.34 5.133 7 8.633 14 10.5 7.47 1.867 20.07 2.8 37.8 2.8 39.2 0 66.97-1.867 83.3-5.6 16.8-3.733 28.7-11.2 35.7-22.4 7-11.2 12.37-30.333 16.1-57.4l30.8-3.5 2.1 3.5Zm753.08 0c-7.94 37.8-14.24 77-18.9 117.6l-3.5 4.2c-98-3.267-168.7-4.9-212.1-4.9-34.54 0-66.97 2.333-97.3 7l4.2-32.2c21-2.8 35.23-8.167 42.7-16.1 7.93-8.4 11.9-22.633 11.9-42.7l.7-294c0-14.933-1.87-24.967-5.6-30.1-3.27-5.133-10.04-7.7-20.3-7.7l-23.8 1.4-1.4-2.8 4.9-30.8c47.6 1.4 80.03 2.1 97.3 2.1 55.53 0 98.7-.467 129.5-1.4 30.8-1.4 57.63-3.733 80.5-7l2.1 4.2c-8.4 36.867-13.77 75.6-16.1 116.2l-33.6 2.8 1.4-30.1c0-16.333-2.1-27.533-6.3-33.6-4.2-6.533-13.3-10.733-27.3-12.6-14-2.333-38.5-3.5-73.5-3.5-16.34 0-27.54.467-33.6 1.4-6.07.933-10.04 3.267-11.9 7-1.87 3.267-3.04 9.567-3.5 18.9l-5.6 135.8 72.1.7c18.2 0 46.66-2.567 85.4-7.7l2.8 3.5-9.8 41.3c-51.8-1.4-84.47-2.1-98-2.1-15.4 0-33.37 1.633-53.9 4.9l-2.8 133.7c0 13.533 1.16 23.1 3.5 28.7 2.33 5.133 7 8.633 14 10.5 7.46 1.867 20.06 2.8 37.8 2.8 39.2 0 66.96-1.867 83.3-5.6 16.8-3.733 28.7-11.2 35.7-22.4 7-11.2 12.36-30.333 16.1-57.4l30.8-3.5 2.1 3.5Zm473.77 89.6c23.34-1.867 39.44-4.667 48.3-8.4 8.87-4.2 14.7-11.433 17.5-21.7 2.8-10.733 4.2-29.4 4.2-56V292.4c-39.66 1.4-66.73 3.733-81.2 7-14 2.8-23.56 9.567-28.7 20.3-5.13 10.267-9.8 30.567-14 60.9l-32.9 2.8c5.6-44.333 9.1-84.7 10.5-121.1l6.3-5.6 58.1 7.7h217l59.5-7.7 6.3 5.6c1.4 38.267 4.9 77.7 10.5 118.3l-32.9 2.8c-5.13-30.8-10.26-51.567-15.4-62.3-5.13-10.733-14.23-17.733-27.3-21-13.06-3.267-38.26-5.833-75.6-7.7-2.8 28-5.36 77.467-7.7 148.4-2.33 70.933-3.5 134.867-3.5 191.8 0 17.267 3.04 29.633 9.1 37.1 6.07 7 16.34 10.5 30.8 10.5 14 0 26.84-.7 38.5-2.1l2.1 2.8-6.3 32.2-23.1-.7-79.8-1.4c-25.66 0-57.63.933-95.9 2.8l5.6-30.1Z"
+      ></path>
+   </svg>
+
+   <div class=" font-serif text-5xl md:text-8xl lg:text-9xl flex flex-col justify-center mt-5 px-5 xl:px-30">
+      <h2 class="xl:text-xs text-xs text-neutral-700 text-center">"—what secrets are people not telling you?—"</h2>
+   </div>
+
+   <div class=" font-serif text-5xl md:text-8xl lg:text-9xl flex flex-col justify-center mt-12 px-10 xl:px-32 xl:px-30">
+      <h2 class="xl:text-7xl text-4xl">branding, consulting, and marketing from the ground up</h2>
+      <h2 class="text-xl text-right">let's keep things simple</h2>
+   </div>
+
+   <div class=" font-serif text-5xl md:text-8xl lg:text-9xl flex flex-col justify-center h-[300px] px-[25%]">
+      <h1 class=" text-4xl">శ్రీపాద</h1>
+      <h1 class=" mt-4 text-2xl">/srIpada/</h1>
+
+      <h2 class="text-xl text-right">Feet of god; holy feet.</h2>
+   </div>
+   <div class=" flex flex-col lg:flex-row px-[5%] mb-[250px] justify-center items-center mt-[250px]">
+      <h1 class="text-7xl">let's keep things simple.</h1>
+      {#each ["51", "76", "101"] as price}
+         <div class="lg:w-1/3 flex flex-col items-center">
+            <h1 class="lg:text-4xl text-4xl mb-5">{`"the $${price} t-shirt"`}</h1>
+
+            <div class="border-black border-2 flex flex-col items-center h-full w-full relative group">
+               <button
+                  class="absolute top-1/2 z-10 left-1/2 text-white underline opacity-0 group-hover:opacity-100 transition duration-300"
+                  style="  transform: translate(-50%, -50%);">
+                  i want it
+               </button>
+               <video
+                  class=""
+                  data-module="video"
+                  playsinline=""
+                  autoplay="autoplay"
+                  muted="muted"
+                  loop="loop"
+                  data-video-bg-executed-loops="1"
+                  tabindex="-1"
+                  src="/animated.mp4"
+                  data-duration="10069"></video>
+            </div>
+         </div>
+      {/each}
+   </div>
+
+   <footer class="h-[300px] border-t border-t-gray-200 flex flex-row justify-evenly pt-6 px-6">
+      <div class="flex flex-col h-full justify-start items-start w-full">
+         <a href="">contact</a>
+         <a href="">faq</a>
+         <a href="">return policy</a>
+         <a href="">shipping</a>
+         <a href="">terms & conditions privacy policy</a>
+      </div>
+      <div class="flex flex-col h-full justify-start items-start w-full">
+         <a href="">instagram</a>
+         <a href="">twitter</a>
+         <a href="">facebook</a>
+      </div>
+
+      <div class="flex flex-col h-full justify-start items-start w-full">
+         <a href="">instagram</a>
+         <a href="">twitter</a>
+         <a href="">facebook</a>
+      </div>
+      <div class="flex flex-col h-full justify-start items-start w-full">
+         <a href="">instagram</a>
+         <a href="">twitter</a>
+         <a href="">facebook</a>
+      </div>
+   </footer>
+</div>
+
+<svg
+   class="fixed -translate-x-1/2 left-1/2 bottom-20 pointer-events-none w-[350px] z-[60]"
+   stroke-miterlimit="10"
+   style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;"
+   viewBox="0 0 3370.82 2384.24">
+   <g fill="none" stroke-width="10" clip-path="url(#a)">
+      <path
+         d="M-564.474 585.066c-13.642 0-30.067 7.21-30.067 23.737m1861.031 30.068c235.17-264.569-193.96-65.684-280.105 120.271-89.21 192.58 176.165 205.059 174.075 344.988-1.88 125.89-297.936 221.42-371.888 123.43-65.488-86.77 303.998-284.206 346.568-307.002 22.81-12.211 85.95-45.294 74.38-22.156-13.52 27.045-51.28 55.013-66.47 79.126-23.51 37.342 132.06-103.234 117.11-61.718-17.89 49.693-56.83 93.2-82.29 139.26-1.94 3.52-7.69 13.81-4.75 11.08 12.09-11.23 81.29-84.949 79.13-79.127-13.95 37.487-102.8 161.377-112.36 175.657-24.02 35.88-61.68 147.29-74.38 106.03-30.35-98.65 187.52-346.831 259.53-378.22 30.67-13.37-73.54 124.87-61.72 117.11 61.45-40.385 71.75-12.367 112.36-49.062 89.73-81.081 153.91-164.595 231.05-259.532 43.39-53.398 179.65-202.503 120.27-167.746-222.84 130.443-278.58 634.79 49.06 137.679 25.09-38.078-62.17 66.892-90.21 102.863-34.53 44.315-75.99 86.37-94.95 139.261-21.01 58.654 216.07 146.427 113.94 177.237-265.54 80.12-648.28 50.17-922.598 18.99-13.435-1.52 25.227-9.75 37.98-14.24 108.575-38.24 214.858-83.97 325.998-113.94 171.03-46.12 343.61-89.565 519.06-113.94 227.98-31.672 458.93-35.87 688.39-53.806M-708.482 573.988c16.223-29.201 41.244-18.853 71.213-14.243"
+         class="anim"
+         stroke="#ffffff"
+         style="stroke-dasharray:8247.4921875;stroke-dashoffset:8247.4921875"></path>
+   </g>
+</svg>
+
+<div class="bg-black backdrop pointer-events-none fixed w-full h-full top-0 left-0 z-50"></div>
+
+<style>
+.backdrop {
+   -webkit-animation: fade-out 2s;
+   -webkit-animation-delay: 2s;
+   /* animation-delay: 2s; */
+   -webkit-animation-iteration-count: 1;
+   -webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes fade-out {
+   0% {
+      opacity: 1;
+   }
+   100% {
+      opacity: 0;
+   }
+}
+
+@-webkit-keyframes flicker {
+   0% {
+      opacity: 0;
+   }
+   9% {
+      opacity: 0;
+   }
+   10% {
+      opacity: 0.5;
+   }
+   13% {
+      opacity: 0;
+   }
+   20% {
+      opacity: 0.5;
+   }
+   25% {
+      opacity: 1;
+   }
+}
+
+@keyframes move-top {
+   0% {
+      top: 200px;
+      fill: #ffffff;
+   }
+   100% {
+      top: 30px;
+      fill: #000000;
+   }
+}
+
+@keyframes move-bottom-left {
+   0% {
+      /* right: 200px; */
+      /* stroke: #ffffff; */
+   }
+   100% {
+      /* right: 0px; */
+      /* stroke: #000000; */
+   }
+}
+
+.logo {
+   -webkit-animation: flicker 2s;
+   -webkit-animation: move-top 1s 2s forwards;
+   /* -webkit-animation: fade-black 1s 2s forwards; */
+   text-align: center;
+   /* margin-top: 3em; */
+   font-family: "Lato", sans-serif;
+   font-size: 3em;
+}
+.anim {
+   -webkit-animation: sign 2s ease forwards;
+   /* -webkit-animation: move-bottom-left 2s 2s ease forwards; */
+   /* stroke: white; */
+}
+
+@keyframes sign {
+   to {
+      stroke-dashoffset: 0;
+   }
+}
+.marquee {
+   position: relative;
+   overflow: hidden;
+   --offset: 100%;
+   --time: 60s;
+}
+
+.marquee__inner {
+   display: flex;
+   width: fit-content;
+   animation: marquee var(--time) linear infinite;
+}
+
+.marquee__inner span {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 2rem;
+   color: black;
+}
+
+@keyframes marquee {
+   0% {
+      transform: translate3d(var(--offset), 0, 0);
+   }
+   100% {
+      transform: translate3d(calc(-1 * var(--offset)), 0, 0);
+   }
+}
+.container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+</style>
