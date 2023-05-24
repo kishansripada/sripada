@@ -76,33 +76,6 @@ let scrollPosition = 0;
 
       <h2 class="text-xl text-right">Feet of god; holy feet.</h2>
    </div>
-   <div class=" flex flex-col lg:flex-row px-[5%] mb-[250px] justify-center items-center mt-[250px]">
-      <h1 class="text-7xl">let's keep things simple.</h1>
-      {#each ["51", "76", "101"] as price}
-         <div class="lg:w-1/3 flex flex-col items-center">
-            <h1 class="lg:text-4xl text-4xl mb-5">{`"the $${price} t-shirt"`}</h1>
-
-            <div class="border-black border-2 flex flex-col items-center h-full w-full relative group">
-               <button
-                  class="absolute top-1/2 z-10 left-1/2 text-white underline opacity-0 group-hover:opacity-100 transition duration-300"
-                  style="  transform: translate(-50%, -50%);">
-                  i want it
-               </button>
-               <video
-                  class=""
-                  data-module="video"
-                  playsinline=""
-                  autoplay="autoplay"
-                  muted="muted"
-                  loop="loop"
-                  data-video-bg-executed-loops="1"
-                  tabindex="-1"
-                  src="/animated.mp4"
-                  data-duration="10069"></video>
-            </div>
-         </div>
-      {/each}
-   </div>
 
    <footer class="h-[300px] border-t border-t-gray-200 flex flex-row justify-evenly pt-6 px-6">
       <div class="flex flex-col h-full justify-start items-start w-full">
